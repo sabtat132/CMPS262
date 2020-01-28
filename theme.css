@@ -1,0 +1,11 @@
+p{
+  font-size: 1em;
+}
+
+p.big{
+  font-size: 3em;
+}
+
+p.color{
+  color: green;
+}

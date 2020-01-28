@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sabrina Spring 2020</title>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src = "jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <script type = "text/javascript">
+  $(document).ready(function(){
+    function rgt(){
+      $('#sldr').animate({left: "150"},1000, hider);
+    }
+    rgt();
+    function hider() {
+      $('#sldr').css('left', "0px");
+        rgt();
+    }
+  });
+
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $("p").hide();
+    });
+  $("#show").click(function(){
+    $("p").show();
+    });
+  });
+
+
+
+  </script>
+  <style>
+      body{
+        margin: 0;
+        font-family:Arial, Helvetica, sans-serif;
+      }
+
+      .topnav{
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      .topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover{
+        background-color: #ddd;
+        color: black;
+      }
+
+      .topnav a:active{
+        background-color:#4CAF50;
+        color: white;
+      }
+
+  </style>
+</head>
+<body>
+  <div class "topnav">
+    <a class="active" href="home.html">Home</a>
+    <a href="bio.html">Bio</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div style = "padding=left:16px">
+    <h2>Welcome to Sabrina's Website for Spring Semester 2020!</h2>
+    <p>I want to be a Data Scientist</p>
+  </div>
+
+  <form id = "form1" runat="server">
+    <div>
+      <center>
+      <img id="sldr" src="llama.gif" style = "position:absolute" />
+    </center>
+    </div>
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
+  <p>Fun fact: My favorite animal is a llama</p>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<center>
+<p>PS: This code/website is not going to look that pretty because I had extreme difficulty:)</p>
+</center>
+</body>
+</html>

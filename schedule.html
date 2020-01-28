@@ -1,0 +1,86 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spring 2020 Courses</title>
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <script src = "jquery-3.1.1.min.js"></script>
+
+    <p class="enlargeable">Did you know what day was this week?</p>
+    <p class="enlargeable">#DataPrivacyDay</p>
+    <button id="enlarge">Enlarge</button>
+    <button id="reduce">Reduce</button>
+    
+    <script>
+    $("button#enlarge").on("click", function(){
+      $("p.enlargeable").addClass("big");
+    });
+
+    $("button#reduce").on("click", function(){
+      $("p.enlargeable").removeClass("big");
+    });
+    </script>
+    <style>
+      .dropbtn{
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown{
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover{background-color: #f1f1f1f1}
+
+      .dropdown:hover .dropdown-content{
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn-content{
+        background-color: #3e8e41;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <center>
+    <h1>Spring 2020 Courses</h1>
+    <p>Here is a list on the dropdown of the courses I take this Spring 2020 Semester. I am currently a junior (1st semester), so I have three semesters left after this one</p>
+    <p> I also just realized that I can tack on a minor to my IT major since courses overlap</p>
+    <p>I'm looking into getting my masters degree in Business Analytics from Duquesne or Point Park University</p>
+    <div class = "dropdown">
+      <button class="dropbtn">Courses</button>
+      <div class ="dropdown-content">
+        <a href="#">Advanced Programming</a>
+        <a href="#">Server Management</a>
+        <a href="#">Principles of Marketing</a>
+        <a href="#">Managerial Accouting</a>
+        <a href="#">World Literature: Novels</a>
+        </div>
+      </div>
+
+
+
+  </body>
+</html>
