@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+  <style>
+    h1{
+      text-align: center;
+    }
+    div{
+      width: 100%;
+      height: 50px;
+      display: block;
+      margin: 15px 0 0 10px;
+    }
+  </style>
+
+
+
+ <div ng-app="myApp" ng-controller="myCtrl">
+
+  <h1>DJD Properties myTenant Portal Account Sign Up</h1>
+
+  <p>Please input the full name that you would like associated under your account.</p>
+   First Name: <input type="text" ng-model="firstName"><br>
+   Last Name: <input type="text" ng-model="lastName"><br>
+  <br>
+  Full Name: {{firstName + " " + lastName}}
+
+  <p>Input your email address to be associated under your account. Please put the beginning part of the email before the @</p>
+  <p>Email Address: <input type="text" ng-model="email" placeholder="Input email here "</p>
+  <p>{{email}}@gmail.com</p>
+
+  <p>Please input the phone number/best number to reach you for your account</p>
+  Enter your phone number: <input type = "text" ng-model="number" /><br />
+  Your number is: <span ng-bind="number"</span>
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName = " ";
+    $scope.lastName = "  ";
+});
+</script>
+
+
+</body>
+</html>
